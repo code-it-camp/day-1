@@ -1,13 +1,12 @@
-import sys
-import unittest
+import unittest, sys
 from graderlib import test_case
-import practice as mod
+import practice as module
 
 def run_test(questions):
 	for question in questions:
 		# test is the instance of our TestCase class with all of our
 		# desired question, specified by argv[1], functions to be tested.
-		test = test_case(mod, question, question_inputs)
+		test = test_case(module, question, question_inputs)
 
 		# not test corresponds to a requested question test which
 		# doesn't exist
@@ -17,6 +16,12 @@ def run_test(questions):
 		# adds our TestCase to the global attributes so that unittest
 		# will find it when it searches for TestCases to run
 		globals()[test.__name__] = test
+
+	# Displays which questions are being tested
+	plural = ('s ' if len(questions) > 1 else ' ')
+	q_string = ', '.join([questions[i][1:] for i in range(len(questions))])
+	print('\nRunning Test' + plural + 'for Question' + plural + q_string)
+
 
 	"""
 	argv='q' allows the program to use the command line arguments
@@ -42,8 +47,7 @@ def main():
 		run_test([sys.argv[1]])
 	# Too many arguments.
 	else:
-		print("Too many arguments. Check the README.md "
-			+ "for proper formatting of question tests.")
+		run_test([sys.argv[i] for i in range(1, len(sys.argv))])
 
 """
 Dictionary of allowed question test requests
@@ -70,18 +74,22 @@ question_inputs = {
 		"div": [
 			[(56, 8), 7],
 			[(84, 7), 12]
+		], "square": [
+			[(2,), 4],
+			[(3,), 9],
+			[(10,), 100]
 		]
 	},
 	"q2": {
 		"quart": [
-			[(2), 16],
-			[(3), 81],
-			[(4), 256]
+			[(2,), 16],
+			[(3,), 81],
+			[(4,), 256]
 		],
 		"cube": [
-			[(2), 8],
-			[(5), 125],
-			[(19), 6859]
+			[(2,), 8],
+			[(5,), 125],
+			[(19,), 6859]
 		]
 	},
 	"q3": {
@@ -96,12 +104,12 @@ question_inputs = {
 			[(65,-73), -73]
 		],
 		"max_val2": [
-			[(281, 120, 321, 6645), 6445],
+			[(281, 120, 321, 6645), 6645],
 			[(62344, 334, 52346, 333), 62344],
 			[(294, 21, 94, -818), 294]
 		],
 		"min_val2": [
-			[(1, 2, 3, 4, 5, 6),],
+			[(1, 2, 3, 4, 5, 6), 1],
 			[(-1, 523, 292, 2108, 30, -13,), -13],
 			[(6, 8, 86, 61, 42, 50), 6]
 		],
@@ -114,27 +122,27 @@ question_inputs = {
 			[([1, 40, 3], [2, 4, 6]), [1, 40, 3, 2, 4, 6]]
 		],
 		"stringed_out": [
-			[("abcde"), ['a', 'c', 'e']],
-			[("aabbcc"), ['a', 'b', 'c']],
-			[("1ab23c"), ['1', 'b', '3']],
-			[([0, 1, 2, 3, 4]), [0, 2, 4]]
+			[("abcde",), ['a', 'c', 'e']],
+			[("aabbcc",), ['a', 'b', 'c']],
+			[("1ab23c",), ['1', 'b', '3']],
+			[([0, 1, 2, 3, 4],), [0, 2, 4]]
 		],
 		"length_of_str": [
-			[('abcdefghijklm'), 12],
-			[('code it!'), 8],
-			[([3, 1, 2, 0]), 4]
+			[('abcdefghijkl',), 12],
+			[('code it!',), 8],
+			[([3, 1, 2, 0],), 4]
 		],
 		"slice1": [
-			[('yeah yeah yeah', 9), 'yeah'],
-			[('The Beatles', 5), 'Beatles'],
+			[('yeah yeah yeah', 10), 'yeah'],
+			[('The Beatles', 4), 'Beatles'],
 			[('lampost', 3), 'post'],
 			[(['1', 2, '3', 4, '5', 6], 3), [4, '5', 6]]
 		],
 		"slice2": [
 			[('heyo', 3), 'hey'],
 			[('suppppppp', 5), 'suppp'],
-			[('worst trade deal ever', 3), 'wo'],
-			[(['hi', 'hello', 'howdy', 'cheerio'], 4), ['hi', 'hello', 'howdy']]
+			[('worst trade deal ever', 2), 'wo'],
+			[(['hi', 'hello', 'howdy', 'cheerio'], 3), ['hi', 'hello', 'howdy']]
 		],
 		"slice_and_dice": [
 			[('abc123zyx987', 4, 8), '23zy'],
@@ -146,14 +154,14 @@ question_inputs = {
 			[('Rolltide', 'iiiiinnn'), 'Rollinnn'],
 			[('yummy', 'tummy'), 'yummy'],
 			[('Joe Biden ', 'Obama'), 'Joe Bama'],
-			[([1, 2, 3, 4], [9, 8, 6, 6]), [1, 2, 9, 8]]
+			[([1, 2, 3, 4], [6, 7, 9, 8]), [1, 2, 9, 8]]
 		]
 	},
 	"q5": {
 		"powerful_func": [
-			[([1, 2, 3, -1, 4, 2]), 1],
-			[(4, 2, 1, 0.5, 0.25, 0.125), 0.0625],
-			[(3, 5, 7, 1, 3, 5), 9]
+			[([1, 2, 3, -1, 4, 2],), 1],
+			[([4, 2, 1, 0.5, 0.25, 0.125],), 0.0625],
+			[([3, 5, 7, 1, 3, 5],), 9]
 		]
 	}
 }
