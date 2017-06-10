@@ -12,7 +12,7 @@ def add(a, b):
 		the sum of a and b
 	"""
 	# FIXME
-	return a + b
+	return __________
 
 def sub(a, b):
 	"""
@@ -26,7 +26,7 @@ def sub(a, b):
 		the differnce of b from a
 	"""
 	# FIXME
-	return a - b
+	return __________
 
 def mul(a, b):
 	"""
@@ -40,7 +40,7 @@ def mul(a, b):
 		the product of a and b
 	"""
 	# FIXME
-	return a * b
+	return __________
 
 def div(a, b):
 	"""
@@ -54,7 +54,7 @@ def div(a, b):
 		the quotient of a by b
 	"""
 	# FIXME
-	return a / b
+	return __________
 
 def square(x):
 	"""
@@ -67,7 +67,7 @@ def square(x):
 		the square of x
 	"""
 	# FIXME
-	return x * x
+	return __________
 
 # ---------------------------------------------------------- #
 
@@ -86,7 +86,7 @@ def quart(x):
 		the fourth power of x
 	"""
 	# FIXME
-	return square(square(x))
+	return __________
 
 def cube(x):
 	"""
@@ -100,7 +100,7 @@ def cube(x):
 		the third power of x
 	"""
 	# FIXME
-	return x * square(x)
+	return __________
 
 # ---------------------------------------------------------- #
 
@@ -118,7 +118,7 @@ def max_val1(x1, x2):
 		the larger of the two numbers
 	"""
 	# FIXME
-	return max(x1, x2)
+	return __________
 
 def min_val1(x1, x2):
 	"""
@@ -132,7 +132,7 @@ def min_val1(x1, x2):
 		the smaller of the two numbers
 	"""
 	# FIXME
-	return min(x1, x2)
+	return __________
 
 def max_val2(x1, x2, x3, x4):
 	"""
@@ -148,7 +148,7 @@ def max_val2(x1, x2, x3, x4):
 		the largest of the four numbers
 	"""
 	# FIXME
-	return max(x1, x2, x3, x4)
+	return __________
 
 def min_val2(x1, x2, x3, x4, x5, x6):
 	"""
@@ -166,7 +166,7 @@ def min_val2(x1, x2, x3, x4, x5, x6):
 		the smallest of the six numbers
 	"""
 	# FIXME
-	return min(x1, x2, x3, x4, x5, x6)
+	return __________
 
 # ---------------------------------------------------------- #
 
@@ -187,7 +187,7 @@ def merge_strings(str1, str2):
 		new string which is combo of str1 and str2
 	"""
 	# FIXME
-	return str1 + str2
+	return __________
 
 def stringed_out(str0):
 	"""
@@ -203,7 +203,7 @@ def stringed_out(str0):
 		list of 1st, 3rd and 5th letters of str0
 	"""
 	# FIXME
-	return [str0[0], str0[2], str0[4]]
+	return __________
 
 def length_of_str(str0):
 	"""
@@ -218,7 +218,7 @@ def length_of_str(str0):
 		the length of the string
 	"""
 	# FIXME
-	return len(str0)
+	return __________
 
 def slice1(str0, start):
 	"""
@@ -235,7 +235,7 @@ def slice1(str0, start):
 		after and including the start index
 	"""
 	# FIXME
-	return str0[start:]
+	return __________
 
 def slice2(str0, end):
 	"""
@@ -253,7 +253,7 @@ def slice2(str0, end):
 		before and excluding the end index
 	"""
 	# FIXME
-	return str0[:end]
+	return __________
 
 def slice_and_dice(str0, start, end):
 	"""
@@ -275,7 +275,7 @@ def slice_and_dice(str0, start, end):
 		from the start index up to the end index
 	"""
 	# FIXME
-	return slice1(slice2(str0, end), start) + a
+	return __________
 
 def chop_it_up(str0, str1):
 	"""
@@ -293,7 +293,7 @@ def chop_it_up(str0, str1):
 		str0 and str1
 	"""
 	# FIXME
-	return merge_strings(slice2(str0, length_of_str(str0) // 2), slice1(str1, length_of_str(str1) // 2))
+	return __________
 
 # ---------------------------------------------------------- #
 
@@ -318,10 +318,10 @@ def powerful_func(lst):
 		max of these two numbers
 	"""
 	# FIXME
-	first = min(stringed_out(lst))
-	second = min(stringed_out(slice1(lst, 1))) + a
-	third = square(max(irst, second))
-	return third
+	min_135 = __________
+	min_246 = __________
+	max_of_mins = __________
+	return max_of_mins
 
 if __name__ == '__main__':
 	main()
