@@ -131,6 +131,7 @@ def test(func, inputs, q_string, print_q_string):
 			following functions belong
 	"""
 	if print_q_string:
+		print()
 		print(q_string)
 
 	error_occured = False

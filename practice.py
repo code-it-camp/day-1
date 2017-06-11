@@ -1,5 +1,7 @@
-# Question 1: Math Operations
-# ---------------------------------------------------------- #
+# ------------------------------------------------------------------------- #
+
+# Question 1
+# ------------------------------------------------------------------------- #
 def add(a, b):
 	"""
 	Computes the sum of a and b.
@@ -12,7 +14,7 @@ def add(a, b):
 		the sum of a and b
 	"""
 	# FIXME
-	return __________
+	return ________
 
 def sub(a, b):
 	"""
@@ -26,7 +28,7 @@ def sub(a, b):
 		the differnce of b from a
 	"""
 	# FIXME
-	return __________
+	return ________
 
 def mul(a, b):
 	"""
@@ -40,7 +42,7 @@ def mul(a, b):
 		the product of a and b
 	"""
 	# FIXME
-	return __________
+	return ________
 
 def div(a, b):
 	"""
@@ -54,7 +56,7 @@ def div(a, b):
 		the quotient of a by b
 	"""
 	# FIXME
-	return __________
+	return ________
 
 def square(x):
 	"""
@@ -67,12 +69,12 @@ def square(x):
 		the square of x
 	"""
 	# FIXME
-	return __________
+	return ________
 
-# ---------------------------------------------------------- #
+# ------------------------------------------------------------------------- #
 
 # Question 2
-# ---------------------------------------------------------- #
+# ------------------------------------------------------------------------- #
 def quart(x):
 	"""
 	Computes the fourth power of x without explicitly writing
@@ -86,7 +88,7 @@ def quart(x):
 		the fourth power of x
 	"""
 	# FIXME
-	return __________
+	return ________
 
 def cube(x):
 	"""
@@ -100,79 +102,12 @@ def cube(x):
 		the third power of x
 	"""
 	# FIXME
-	return __________
+	return ________
 
-# ---------------------------------------------------------- #
+# ------------------------------------------------------------------------- #
 
 # Question 3
-# ---------------------------------------------------------- #
-def max_val1(x1, x2):
-	"""
-	Determines the larger of the two arguments passed in.
-
-	Args:
-		x1: first number in comparison
-		x2: second number in comparison
-
-	Returns:
-		the larger of the two numbers
-	"""
-	# FIXME
-	return __________
-
-def min_val1(x1, x2):
-	"""
-	Determines the smaller of the two arguments passed in.
-
-	Args:
-		x1: first number in comparison
-		x2: second number in comparison
-
-	Returns:
-		the smaller of the two numbers
-	"""
-	# FIXME
-	return __________
-
-def max_val2(x1, x2, x3, x4):
-	"""
-	Determines the largest of the four arguments passed in.
-
-	Args:
-		x1: first number in comparison
-		x2: second number in comparison
-		x3: third number in comparison
-		x4: fourth number in comparison
-
-	Returns:
-		the largest of the four numbers
-	"""
-	# FIXME
-	return __________
-
-def min_val2(x1, x2, x3, x4, x5, x6):
-	"""
-	Determines the smallest of the six arguments passed in.
-
-	Args:
-		x1: first number in comparison
-		x2: second number in comparison
-		x3: third number in comparison
-		x4: fourth number in comparison
-		x5: fifth number in comparison
-		x6: sixth number in comparison
-
-	Returns:
-		the smallest of the six numbers
-	"""
-	# FIXME
-	return __________
-
-# ---------------------------------------------------------- #
-
-# Question 4
-# ---------------------------------------------------------- #
-
+# ------------------------------------------------------------------------- #
 def merge_strings(str1, str2):
 	"""
 	Makes a new string composed of merging
@@ -187,7 +122,7 @@ def merge_strings(str1, str2):
 		new string which is combo of str1 and str2
 	"""
 	# FIXME
-	return __________
+	return ________
 
 def stringed_out(str0):
 	"""
@@ -203,7 +138,7 @@ def stringed_out(str0):
 		list of 1st, 3rd and 5th letters of str0
 	"""
 	# FIXME
-	return __________
+	return ________
 
 def length_of_str(str0):
 	"""
@@ -218,7 +153,7 @@ def length_of_str(str0):
 		the length of the string
 	"""
 	# FIXME
-	return __________
+	return ________
 
 def slice1(str0, start):
 	"""
@@ -235,7 +170,7 @@ def slice1(str0, start):
 		after and including the start index
 	"""
 	# FIXME
-	return __________
+	return ________
 
 def slice2(str0, end):
 	"""
@@ -253,7 +188,7 @@ def slice2(str0, end):
 		before and excluding the end index
 	"""
 	# FIXME
-	return __________
+	return ________
 
 def slice_and_dice(str0, start, end):
 	"""
@@ -275,7 +210,7 @@ def slice_and_dice(str0, start, end):
 		from the start index up to the end index
 	"""
 	# FIXME
-	return __________
+	return ________
 
 def chop_it_up(str0, str1):
 	"""
@@ -293,12 +228,12 @@ def chop_it_up(str0, str1):
 		str0 and str1
 	"""
 	# FIXME
-	return __________
+	return ________
 
-# ---------------------------------------------------------- #
+# ------------------------------------------------------------------------- #
 
-# Question 5
-# ---------------------------------------------------------- #
+# Question 4
+# ------------------------------------------------------------------------- #
 def powerful_func(lst):
 	"""
 	Determines the minimum number from the
@@ -318,10 +253,78 @@ def powerful_func(lst):
 		max of these two numbers
 	"""
 	# FIXME
-	min_135 = __________
-	min_246 = __________
-	max_of_mins = __________
-	return max_of_mins
+	first = ________
+	second = ________
+	return ________
+
+def stretch_func(lst):
+	"""
+	Creates a list which has the elements of lst
+	repeated three times (e.g. [1, 2, 3] --> [1, 2, 
+	3, 1, 2, 3, 1, 2, 3]). We then remove the third
+	element of the first repetition, the second element
+	of the second repetition and the first element
+	of the third repetition.
+
+	Args:
+		lst: a list containing at least 3 numbers
+
+	Returns:
+		a list with at least 6 numbers
+	"""
+	# FIXME
+	lst2 = ________
+	lst2.pop(________)
+	lst2.pop(________)
+	lst2.pop(________)
+	return lst2
+
+def quart_and_square(lst):
+	"""
+	Subtracts the square of the sum of the list
+	from the quart of the largest number in the
+	list.
+
+	Args:
+		lst: a list containing at least 3 numbers
+
+	Returns:
+		a tuple containing the string "RESULT" as
+		well as the results of our calculations
+	"""
+	# FIXME
+	val1 = ________
+	val2 = ________
+	return (________, ________)
+
+# ------------------------------------------------------------------------- #
+
+# Question 5
+# ------------------------------------------------------------------------- #
+def wardrobe(jackets, shoe_brands, shoe_prices):
+	"""
+	Adds the entry "Ralph Polo": 40 to the provided dictionary.
+	Creates a new dictionary with three entries:
+	"Nike": 10, "Adidas": 20, "Jordans": 30
+	Then creates another dictionary containing two entries:
+	"jackets": the provided dictionary, "shoes": the dictionary
+	created in this function.
+
+	Args:
+		jackets: a dictionary containing jacket brands and prices
+		shoe_brands: a three item list of shoe brands
+		shoe_prices: a three item list of shoe brand prices
+
+	Returns:
+		a tuple with the first value being "Clothes" and the
+		second value being a dictionary containing a dictionary
+		of jackets and a dictionary of shoes
+	"""
+	# FIXME
+	________
+	________
+	...
+	return {________, ________}
 
 if __name__ == '__main__':
 	main()
