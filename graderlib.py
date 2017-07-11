@@ -53,7 +53,7 @@ def test_case_factory(name, module, func_inputs):
 	# Formatting for printing out question name
 	# and ordering to determine which function the
 	# question name should be printed before
-	q_string = "Question " + name[1:name.index('T')]
+	q_string = "---------" + len(name[1:name.index('T')]) * "-" + "\nQuestion " + name[1:name.index('T')]
 	print_q_string = False
 	sorted_keys = list(func_inputs.keys())
 	sorted_keys.sort()
@@ -131,7 +131,6 @@ def test(func, inputs, q_string, print_q_string):
 			following functions belong
 	"""
 	if print_q_string:
-		print()
 		print(q_string)
 
 	error_occured = False

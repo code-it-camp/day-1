@@ -1,6 +1,6 @@
 # ------------------------------------------------------------------------- #
-
-# Question 1
+#																			#
+# Question 1																#
 # ------------------------------------------------------------------------- #
 def add(a, b):
 	"""
@@ -72,14 +72,14 @@ def square(x):
 	return ________
 
 # ------------------------------------------------------------------------- #
-
-# Question 2
+#																			#
+# Question 2																#
 # ------------------------------------------------------------------------- #
 def quart(x):
 	"""
 	Computes the fourth power of x without explicitly writing
-	x * x * x * x or sqr(x) * sqr(x). HINT: use a previously
-	defined function
+	x * x * x * x or x ** 4. HINT: Use previously a defined function
+	and think about breaking x ** 4 into its squares.
 
 	Args:
 		x: number to quarted
@@ -90,28 +90,29 @@ def quart(x):
 	# FIXME
 	return ________
 
-def cube(x):
+def oct(x):
 	"""
-	Computes the third power of x without explicitly writing
-	x * x * x. HINT: use a previously defined function
+	Computes the eighth power of x without explicitly writing
+	x * x * x * x * x * x * x * x or x ** 8. HINT: Use a previously
+	defined function.
 
 	Args:
-		x: number to quarted
+		x: number to be raised to the eighth power
 
 	Returns:
-		the third power of x
+		the eighth power of x
 	"""
 	# FIXME
 	return ________
 
 # ------------------------------------------------------------------------- #
-
-# Question 3
+#																			#
+# Question 3																#
 # ------------------------------------------------------------------------- #
 def merge_strings(str1, str2):
 	"""
-	Makes a new string composed of merging
-	the two strings together. HINT: think of
+	Makes a new string composed of the two
+	strings merged together. HINT: think of
 	how to add two strings together
 
 	Args:
@@ -128,8 +129,9 @@ def stringed_out(str0):
 	"""
 	Makes a list of the first, third, and fifth
 	characters in the provided string. HINT: strings
-	can be indexed too. Assume the provided string
+	can be indexed just like a list. Assume the provided string
 	will always be at least 5 characters long.
+	Ex: "abcdefg"[2] == c
 
 	Args:
 		str0: string to be "stringed out"
@@ -159,6 +161,7 @@ def slice1(str0, start):
 	"""
 	Makes a string which is just str0 started
 	from the character at the start index.
+	HINT: Look up string slicing in python.
 
 	Args:
 		str0: string to slice
@@ -196,7 +199,8 @@ def slice_and_dice(str0, start, end):
 	from the character at the start index and ended
 	at the end index. NO PRIMITIVE OPERATIONS allowed
 	in this function i.e. no touching str0 directly
-	inside slice_and_dice.
+	inside slice_and_dice, use previously defined
+	functions instead.
 
 	Args:
 		str0: string to slice
@@ -216,8 +220,8 @@ def chop_it_up(str0, str1):
 	"""
 	Make a new string which consists of the first
 	half of str0 combined with a space in between
-	the second half of str1. HINT: a function from
-	a previous question will come in handy here.
+	the second half of str1. HINT: Use previously
+	defined functions
 
 	Args:
 		str0: former part of new string
@@ -231,8 +235,8 @@ def chop_it_up(str0, str1):
 	return ________
 
 # ------------------------------------------------------------------------- #
-
-# Question 4
+#																			#
+# Question 4																#
 # ------------------------------------------------------------------------- #
 def powerful_func(lst):
 	"""
@@ -242,6 +246,7 @@ def powerful_func(lst):
 	from the 2nd, 4th and 6th values of the
 	passed in list. Then determines the
 	maximum of these two values and squares it.
+	HINT: min and max are built-in python functions
 
 	Args:
 		lst: a list containing at least 6 numbers
@@ -264,7 +269,9 @@ def stretch_func(lst):
 	3, 1, 2, 3, 1, 2, 3]). We then remove the third
 	element of the first repetition, the second element
 	of the second repetition and the first element
-	of the third repetition.
+	of the third repetition. HINT: Look up list operations
+	in python, specifically list repetition. list.pop
+	will also be useful for removing items from lists.
 
 	Args:
 		lst: a list containing at least 3 numbers
@@ -283,14 +290,15 @@ def quart_and_square(lst):
 	"""
 	Subtracts the square of the sum of the list
 	from the quart of the largest number in the
-	list.
+	list. HINT: sum is a built-in function in python
 
 	Args:
 		lst: a list containing at least 3 numbers
 
 	Returns:
-		a tuple containing the string "RESULT" as
-		well as the results of our calculations
+		a tuple containing the string "RESULT" as its
+		first item and the results of our calculations
+		as its second item
 	"""
 	# FIXME
 	val1 = ________
@@ -298,17 +306,19 @@ def quart_and_square(lst):
 	return (________, ________)
 
 # ------------------------------------------------------------------------- #
-
-# Question 5
+#																			#
+# Question 5																#
 # ------------------------------------------------------------------------- #
 def wardrobe(jackets, shoe_brands, shoe_prices):
 	"""
-	Adds the entry "Ralph Polo": 40 to the provided dictionary.
+	Adds the entry "Ralph Polo": 40 to the provided dictionary, jackets.
 	Creates a new dictionary with three entries:
 	"Nike": 10, "Adidas": 20, "Jordans": 30
 	Then creates another dictionary containing two entries:
 	"jackets": the provided dictionary, "shoes": the dictionary
 	created in this function.
+	HINT: https://docs.python.org/3/tutorial/datastructures.html#dictionaries has
+	a useful example on how to use dictionaries.
 
 	Args:
 		jackets: a dictionary containing jacket brands and prices
@@ -325,6 +335,51 @@ def wardrobe(jackets, shoe_brands, shoe_prices):
 	________
 	...
 	return {________, ________}
+
+# ------------------------------------------------------------------------- #
+#																			#
+# Question 6																#
+# ------------------------------------------------------------------------- #
+
+# -- Fill in the values in the dictionary short_answers. The values should be
+# -- the answers to each entry's corresponding question. Also, don't erase the
+# -- commas next to the fill-in lines.
+short_answers = {
+	# -- x = 2
+	# -- x *= x
+	# -- x = x ** 3 - 3 * x * x + 2 * x - 1
+	# -- What is the final value of x?
+	"x": ________,
+	
+	# -- y, z = 3, 4
+	# -- mtn = "Mt. Rushmore"
+	# -- z = mtn * y
+	# -- y = z[y:y ** 2]
+	# -- What is the final value of y?
+	"y": ________,
+
+	# -- a, b, c, d = 0, 1, 2, 3
+	# -- s = sum(a, b, c, d)
+	# -- l = [d + s, c - s, b + s, a - s]
+	# -- l[0] *= 2
+	# -- l[2] *= 2
+	# -- s = sum(l)
+	# -- What is the final value of s?
+	"s": ________,
+
+	# -- string_1 = "hello world"
+	# -- string_2, string_3 = "howdy", "bonjour"
+	# -- string_list = ["hi", "hey", "hola", "ni hao"]
+	# -- short = min(min(string_1, string_2, string_3), min(string_list))
+	# -- mid_1 = min(max(string_1, string_2, string_3), max(string_list))
+	# -- mid_2 = max(min(string_1, string_2, string_3), min(string_list))
+	# -- long = max(max(string_1, string_2, string_3), max(string_list))
+	# -- short_mid_long = short + " " + max(mid_1, mid_2)[:len(min(mid_1, mid_2))] + long
+	"short_mid_long": ________
+}
+
+
+#############################################################################
 
 if __name__ == '__main__':
 	main()
