@@ -343,20 +343,20 @@ def wardrobe(jackets, shoe_brands, shoe_prices):
 
 # -- Fill in the values in the dictionary short_answers. The values should be
 # -- the answers to each entry's corresponding question. Also, don't erase the
-# -- commas next to the fill-in lines.
+# -- commas next to the None values.
 short_answers = {
 	# -- x = 2
 	# -- x *= x
 	# -- x = x ** 3 - 3 * x * x + 2 * x - 1
 	# -- What is the final value of x?
-	"x": ________,
-	
+	"x": None,
+
 	# -- y, z = 3, 4
 	# -- mtn = "Mt. Rushmore"
 	# -- z = mtn * y
 	# -- y = z[y:y ** 2]
 	# -- What is the final value of y?
-	"y": ________,
+	"y": None,
 
 	# -- a, b, c, d = 0, 1, 2, 3
 	# -- s = sum(a, b, c, d)
@@ -365,7 +365,7 @@ short_answers = {
 	# -- l[2] *= 2
 	# -- s = sum(l)
 	# -- What is the final value of s?
-	"s": ________,
+	"s": None,
 
 	# -- string_1 = "hello world"
 	# -- string_2, string_3 = "howdy", "bonjour"
@@ -375,11 +375,16 @@ short_answers = {
 	# -- mid_2 = max(min(string_1, string_2, string_3), min(string_list))
 	# -- long = max(max(string_1, string_2, string_3), max(string_list))
 	# -- short_mid_long = short + " " + max(mid_1, mid_2)[:len(min(mid_1, mid_2))] + long
-	"short_mid_long": ________
+	"short_mid_long": None
 }
 
 
 #############################################################################
+
+
+def short_answers_test(x):
+	assert x in short_answers.keys()
+	return short_answers[x]
 
 if __name__ == '__main__':
 	main()

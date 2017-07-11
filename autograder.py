@@ -131,6 +131,14 @@ question_inputs = {
 				}
 			]
 		]
+	},
+	"q6": {
+		"short_answers_test": [
+			[("x",), 23],
+			[("y",), " Mt. RushmoreMt."],
+			[("s",), 22],
+			[("short_mid_long",), "bonjour howni hao"]
+		]
 	}
 }
 
